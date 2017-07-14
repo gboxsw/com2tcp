@@ -44,7 +44,8 @@
 									<mainClass>${exec.mainClass}</mainClass>
 								</transformer>
 							</transformers>
-							<minimizeJar>false</minimizeJar>
+							<minimizeJar>true</minimizeJar>
+							<finalName>com2tcp</finalName>
 						</configuration>
 					</execution>
 				</executions>

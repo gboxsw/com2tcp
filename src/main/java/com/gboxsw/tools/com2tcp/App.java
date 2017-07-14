@@ -6,9 +6,10 @@ public class App {
 
 	public static void main(String[] args) throws IOException {
 		if (args.length == 0) {
-			System.out.println("Usage: binding1 binding2 ...");
-			System.out.println("Binding without dump: TcpPort:SerialPort@baudRate");
-			System.out.println("Binding with dump: TcpPort::SerialPort@baudRate");
+			System.out.println("Usage: java -jar com2tcp [BINDING]...");
+			System.out.println("Binding configuration:");
+			System.out.println("TCP_PORT:SERIAL_PORT@BAUDRATE\t without data dump");
+			System.out.println("TCP_PORT::SERIAL_PORT@BAUDRATE\t with data dump");
 			return;
 		}
 
