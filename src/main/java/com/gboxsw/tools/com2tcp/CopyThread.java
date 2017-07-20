@@ -124,6 +124,11 @@ public class CopyThread extends Thread {
 			result.append(Integer.toString(value, 16));
 		}
 
+		result.append(" | ");
+		for (int i = 0; i < length; i++) {
+			result.append((char) (data[i] & 0xFF));
+		}
+
 		return result.toString();
 	}
 }
